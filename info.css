@@ -1,0 +1,138 @@
+/* info.css - Styles specific to the Information page */
+
+/* Page Title Section Styling */
+.page-title-section {
+    background-color: var(--color-background-alt); /* Use subtle background */
+    padding: var(--spacing-xl) 0;
+    text-align: center;
+    margin-bottom: var(--spacing-xl); /* Space below title area */
+    border-bottom: 1px solid var(--color-border);
+}
+
+.page-title-section h1 {
+    color: var(--color-primary); /* Use primary color for main title */
+    margin-bottom: var(--spacing-sm);
+    font-size: 2.8rem; /* Slightly adjust size if needed */
+}
+
+.page-title-section p {
+    font-size: 1.1rem;
+    color: var(--color-secondary);
+    max-width: 700px;
+    margin: 0 auto; /* Center subtitle */
+    font-family: var(--font-secondary);
+}
+
+/* Main Content Area Styling */
+.info-content-section {
+    padding: var(--spacing-lg) 0 var(--spacing-xxl) 0; /* Add padding top/bottom */
+}
+
+.info-article {
+    max-width: 800px; /* Optimal reading width for text */
+    margin: 0 auto; /* Center the article content */
+}
+
+.info-article h2 {
+    margin-top: var(--spacing-xl); /* Space above section titles */
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-xs);
+    border-bottom: 3px solid var(--color-primary); /* Underline section titles */
+    display: inline-block; /* Border only under text */
+    font-weight: 600; /* Slightly less bold than h1 */
+    font-size: 1.8rem;
+}
+/* First h2 doesn't need top margin */
+.info-article h2:first-of-type {
+    margin-top: 0;
+}
+
+
+.info-article p {
+    line-height: 1.7; /* Improve readability */
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-text-dark); /* Ensure good contrast */
+}
+
+/* Figure/Image Styling */
+.info-figure {
+    margin: var(--spacing-xl) 0; /* Add space around the image */
+    border: 1px solid var(--color-background-alt);
+    padding: var(--spacing-sm);
+    border-radius: 8px;
+    background-color: var(--color-background);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.info-figure img {
+    border-radius: 6px; /* Slightly round image corners */
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensure image covers area nicely */
+    max-height: 400px; /* Limit image height if needed */
+}
+
+.info-figure figcaption {
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--color-secondary);
+    padding-top: var(--spacing-sm);
+    font-style: italic;
+}
+
+/* List Styling */
+.info-list {
+    list-style: none; /* Remove default bullets */
+    padding-left: 0; /* Remove default padding */
+    margin-bottom: var(--spacing-lg);
+}
+
+.info-list li {
+    padding-left: var(--spacing-lg); /* Indent list items */
+    position: relative;
+    margin-bottom: var(--spacing-sm); /* Space between items */
+    line-height: 1.6;
+}
+
+.info-list li::before {
+    content: '✔'; /* Use a checkmark or other icon */
+    color: var(--color-primary);
+    position: absolute;
+    left: 0;
+    top: 0px; /* Adjust vertical alignment */
+    font-weight: bold;
+}
+
+.info-list li strong {
+    font-weight: 600;
+    color: var(--color-text-dark); /* Ensure strong tags stand out */
+}
+
+/* Re-use existing link style if needed */
+.info-article .learn-more-link {
+    display: inline-block;
+    margin-top: var(--spacing-sm);
+    font-weight: 600;
+    color: var(--color-primary);
+    transition: transform var(--transition-fast);
+}
+
+.info-article .learn-more-link:hover {
+    color: var(--color-primary-dark);
+    transform: translateX(5px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .page-title-section h1 {
+        font-size: 2.2rem;
+    }
+
+    .page-title-section p {
+        font-size: 1rem;
+    }
+
+    .info-article h2 {
+        font-size: 1.6rem;
+    }
+}

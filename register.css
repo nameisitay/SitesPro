@@ -1,0 +1,22 @@
+/* register.css - Styles specific to the Register page */
+
+/* Reuse most styles from login.css for consistency */
+@import url('login.css'); /* Import login styles to avoid duplication */
+
+/* You can add specific overrides or additions for the register page below if needed */
+
+/* Example: Maybe the register container is slightly wider */
+/*
+.form-container {
+    max-width: 480px;
+}
+*/
+
+/* Example: Different heading for register */
+/*
+.form-container h2 {
+    color: var(--color-secondary); // Make it different if desired
+}
+*/
+
+/* Add any other register-specific styles here */

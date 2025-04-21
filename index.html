@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Informative - Connect & Discover</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.png" alt="Site Logo" class="logo-img">
+            </a>
+
+            <nav class="main-navigation">
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="info.html">Information</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="#">Our Staff</a></li>
+                </ul>
+            </nav>
+
+            <nav class="user-navigation">
+                <ul>
+                    <li><a href="login.html" id="login-btn" class="btn btn-secondary">Login</a></li>
+                    <li><a href="register.html" id="register-btn" class="btn btn-primary">Register</a></li>
+                    <li><button id="logout-btn" class="btn btn-danger" style="display: none;">Log Out</button></li>
+                </ul>
+            </nav>
+
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1>Welcome to Twitter</h1>
+                <p>Discover what's happening in the world right now. Blaze your glory!</p>
+                <a href="#" class="btn btn-hero">Get Started</a>
+            </div>
+        </section>
+
+        <section class="community-focus">
+            <div class="container community-container">
+                <div class="community-image">
+                    <img src="images/go.jpg" alt="Diverse group of people collaborating peacefully">
+                </div>
+                <div class="community-text">
+                    <h2>Your Safety, Our Priority</h2>
+                    <p>Our community is our top priority. Your safety on the site is our responsibility, as we want you to have a great time, connect meaningfully, and enjoy every moment securely.</p>
+                    <a href="#" class="learn-more-link">Learn More About Safety Features →</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+             <div class="container">
+                 <h2>Key Features</h2>
+                 <div class="feature-grid">
+                     <div class="feature-item">
+                         <img src="images/feature-icon-1.png" alt="Real-time Updates">
+                         <h3>Real-time Updates</h3>
+                         <p>Stay informed with live news and conversations.</p>
+                     </div>
+                      <div class="feature-item">
+                         <img src="images/feature-icon-2.png" alt="Connect Globally">
+                         <h3>Connect Globally</h3>
+                         <p>Join communities and follow interests worldwide.</p>
+                     </div>
+                      <div class="feature-item">
+                         <img src="images/feature-icon-3.png" alt="Express Yourself">
+                         <h3>Express Yourself</h3>
+                         <p>Share your thoughts, media, and moments easily.</p>
+                     </div>
+                 </div>
+             </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2024 Twitter Informative. All rights reserved.</p>
+            <nav class="footer-nav">
+                 <ul>
+                     <li><a href="#">Privacy Policy</a></li>
+                     <li><a href="#">Terms of Service</a></li>
+                     <li><a href="#">Accessibility</a></li>
+                 </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="app.js" type="module"></script>
+</body>
+</html>

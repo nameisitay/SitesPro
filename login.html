@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Twitter Informative</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css"> <!-- Base styles FIRST -->
+    <link rel="stylesheet" href="login.css">   <!-- Login page specific styles -->
+</head>
+<body>
+
+    <header class="site-header"> <!-- Reused Header -->
+        <div class="container header-container">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.png" alt="Site Logo" class="logo-img">
+            </a>
+
+            <nav class="main-navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="info.html">Information</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Our Staff</a></li>
+                </ul>
+            </nav>
+
+            <nav class="user-navigation">
+                <ul>
+                    <!-- Initially, 'Login' and 'Register' links visible -->
+                    <li id="login-link"><a href="login.html" class="btn btn-secondary">Login</a></li>
+                    <li id="register-link"><a href="register.html" class="btn btn-primary">Register</a></li>
+                    <!-- When logged in, these links will be hidden, and a logout button will be visible -->
+                    <li id="logout-link" style="display:none;"><a href="#" class="btn btn-primary" id="logout-btn">Log Out</a></li>
+                </ul>
+            </nav>
+
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Login Form Section -->
+        <section class="form-section" id="login-container">
+            <div class="container">
+                <div class="form-container">
+                    <h2>Log In to Twitter Informative</h2>
+                    <form id="login-form" method="post">
+                        <div class="form-group">
+                            <label for="login-email">Email or Username</label>
+                            <input type="text" id="login-email" name="email" placeholder="Enter your email or username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="login-password">Password</label>
+                            <input type="password" id="login-password" name="password" placeholder="Enter your password" required>
+                        </div>
+                        <div class="form-options">
+                            <a href="#" class="form-link">Forgot password?</a>
+                        </div>
+                        <div class="form-message form-error" id="login-error-message" style="display: none;">
+                            <!-- Error messages will appear here -->
+                        </div>
+                        <button type="submit" class="btn btn-primary form-submit-btn">Log In</button>
+                    </form>
+                    <p class="form-switch-link">
+                        Don't have an account? <a href="register.html" class="form-link">Sign up</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Greeting Section (Initially Hidden) -->
+        <section class="greeting-section" id="greeting-container" style="display: none;">
+            <div class="container">
+                <div class="greeting-container">
+                    <h2 id="greeting-message">Hello, User</h2>
+                    <p>Welcome back to Twitter Informative!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2024 Twitter Informative. All rights reserved.</p>
+            <nav class="footer-nav">
+                 <ul>
+                     <li><a href="#">Privacy Policy</a></li>
+                     <li><a href="#">Terms of Service</a></li>
+                     <li><a href="#">Accessibility</a></li>
+                 </ul>
+            </nav>
+        </div>
+    </footer>
+    
+    <!-- Link to your app.js for Firebase logic -->
+    <script src="app.js" type="module"></script>
+
+</body>
+</html>
